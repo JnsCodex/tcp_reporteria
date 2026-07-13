@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Reporting Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">AgroBI</span>
+                </div>
+                <nav class="header-nav">
+                    <a href="#" class="nav-link active">Dashboard</a>
+                    <a href="#" class="nav-link">Reportes</a>
+                    <a href="#" class="nav-link">Análisis</a>
+                    <a href="#" class="nav-link">Configuración</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <button class="btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="btn-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3.333v2.5M10 14.167v2.5M3.333 10h2.5M14.167 10h2.5M5.683 5.683l1.768 1.768M12.549 12.549l1.768 1.768M5.683 14.317l1.768-1.768M12.549 7.451l1.768-1.768" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="user-avatar">
+                    <span>JD</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Favoritos</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item active">
+                        <span class="sidebar-icon"></span>
+                        <span>Vista General</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <span class="sidebar-icon"></span>
+                        <span>Rendimiento Operativo</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <span class="sidebar-icon"></span>
+                        <span>Análisis Financiero</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Módulos</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item">
+                        <span class="sidebar-icon"></span>
+                        <span>Producción</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <span class="sidebar-icon"></span>
+                        <span>Calidad</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <span class="sidebar-icon"></span>
+                        <span>Logística</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <span class="sidebar-icon"></span>
+                        <span>Sostenibilidad</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <div class="filter-label">Período</div>
+                    <select class="filter-select">
+                        <option>Últimos 30 días</option>
+                        <option>Este mes</option>
+                        <option>Este trimestre</option>
+                        <option>Este año</option>
+                    </select>
+                </div>
+                <div class="filter-divider"></div>
+                <div class="filter-group">
+                    <div class="filter-label">Unidad de Negocio</div>
+                    <select class="filter-select">
+                        <option>Todas las unidades</option>
+                        <option>Norte</option>
+                        <option>Centro</option>
+                        <option>Sur</option>
+                    </select>
+                </div>
+                <div class="filter-divider"></div>
+                <div class="filter-group">
+                    <div class="filter-label">Cultivo</div>
+                    <select class="filter-select">
+                        <option>Todos los cultivos</option>
+                        <option>Trigo</option>
+                        <option>Maíz</option>
+                        <option>Soja</option>
+                    </select>
+                </div>
+                <div class="filter-spacer"></div>
+                <button class="btn-primary">
+                    <span>Aplicar Filtros</span>
+                </button>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- KPI Section -->
+                <section class="kpi-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Indicadores Clave</h2>
+                        <button class="btn-text">Ver todos</button>
+                    </div>
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Producción Total</span>
+                                <div class="kpi-indicator positive"></div>
+                            </div>
+                            <div class="kpi-value"></div>
+                            <div class="kpi-trend"></div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Rendimiento por Hectárea</span>
+                                <div class="kpi-indicator positive"></div>
+                            </div>
+                            <div class="kpi-value"></div>
+                            <div class="kpi-trend"></div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Eficiencia Operativa</span>
+                                <div class="kpi-indicator neutral"></div>
+                            </div>
+                            <div class="kpi-value"></div>
+                            <div class="kpi-trend"></div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Costo por Tonelada</span>
+                                <div class="kpi-indicator negative"></div>
+                            </div>
+                            <div class="kpi-value"></div>
+                            <div class="kpi-trend"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Charts Section - Large -->
+                <section class="chart-section chart-section-large">
+                    <div class="section-header">
+                        <h2 class="section-title">Tendencia de Producción</h2>
+                        <div class="section-actions">
+                            <button class="btn-icon-small">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 3.333v9.334M3.333 8h9.334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <button class="btn-icon-small">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <circle cx="8" cy="8" r="1.5" fill="currentColor"/>
+                                    <circle cx="8" cy="3.5" r="1.5" fill="currentColor"/>
+                                    <circle cx="8" cy="12.5" r="1.5" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-placeholder">
+                            <span>Área para gráfico principal</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Charts Section - Medium (2 columns) -->
+                <section class="chart-section chart-section-medium">
+                    <div class="section-header">
+                        <h2 class="section-title">Distribución por Unidad</h2>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-placeholder">
+                            <span>Gráfico secundario</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="chart-section chart-section-medium">
+                    <div class="section-header">
+                        <h2 class="section-title">Análisis de Calidad</h2>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-placeholder">
+                            <span>Gráfico secundario</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tables Section -->
+                <section class="table-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Detalle Operativo</h2>
+                        <div class="section-actions">
+                            <button class="btn-text">Exportar</button>
+                            <button class="btn-icon-small">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 3.333v9.334M3.333 8h9.334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th class="table-header">
+                                            <div class="th-content">
+                                                <span>Métrica</span>
+                                            </div>
+                                        </th>
+                                        <th class="table-header">
+                                            <div class="th-content">
+                                                <span>Valor Actual</span>
+                                            </div>
+                                        </th>
+                                        <th class="table-header">
+                                            <div class="th-content">
+                                                <span>Período Anterior</span>
+                                            </div>
+                                        </th>
+                                        <th class="table-header">
+                                            <div class="th-content">
+                                                <span>Variación</span>
+                                            </div>
+                                        </th>
+                                        <th class="table-header">
+                                            <div class="th-content">
+                                                <span>Estado</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-row">
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                        <td class="table-cell"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
