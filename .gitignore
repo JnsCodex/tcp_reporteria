@@ -1,12 +1,10 @@
-```gitignore
-# Compiled and build artifacts
-*.pyc
-__pycache__/
-
+```
 # Dependencies
 node_modules/
-venv/
-.venv/
+
+# Editors
+.vscode/
+.idea/
 
 # Logs and temp files
 *.log
@@ -18,28 +16,17 @@ venv/
 .env.local
 *.env.*
 
-# Editors
-.vscode/
-.idea/
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Distribution / packaging
+# Build artifacts
 dist/
 build/
-*.egg-info/
+*.min.js
+*.bundle.js
 
-# MyPy cache
-.mypy_cache/
-# Pytest cache
-.pytest_cache/
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
 # Compressed files
 *.zip
